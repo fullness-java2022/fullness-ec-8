@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>システムエラー | Fullness Stationary社 文具/雑貨販売システム</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="/admin">文具/雑貨販売システム</a></h1>
+        <ul id="nav">
+            <li sec:authorize="hasRole('ADMIN')"><a href="/admin/product">商品情報メンテナンス</a></li>
+            <li sec:authorize="hasRole('ADMIN')"><a href="/admin/product-category-add">商品カテゴリ登録</a></li>
+            <li sec:authorize="hasRole('ADMIN')"><a href="/admin/history">購入履歴検索</a></li>
+            <li sec:authorize="hasRole('ADMIN')"><a href="/admin/emp-add">アカウント登録</a></li>
+            <li sec:authorize="isAuthenticated()">
+                <form th:action="@{/admin/logout}" method="post">
+                    <input type="submit" value="ログアウト" />
+                </form>
+            </li>
+        </ul>
+    </header>
+    <div id="main">
+        <h2>注文ステータス変更(入力)</h2>
+        <table border="1">
+            <tr>
+                <th>購入日時</th>
+                <th>顧客アカウント名(氏名)</th>
+                <th>注文内容</th>
+                <th>現ステータス</th>
+                <th>変更ステータス</th>
+            </tr>
+            <tr>
+                <td>2021年4月1日 10:23</td>
+                <td>r-takahashi(高橋 良輔)</td>
+                <td align="left">
+                    注文ID: 1<br>
+                    合計金額: 360円<br>
+                    <div style="font-size: 80%;">
+                        水性ボープペン(黒) x 1個<br>
+                        水性ボープペン(赤) x 1個<br>
+                        水性ボープペン(青) x 1個<br>
+                    </div>
+                </td>
+                <td>
+                    注文済み
+                </td>
+                <td>
+                    <select>
+                        <!-- <option value="">注文済み</option> -->
+                        <option value="">入金済み</option>
+                        <option value="">配送中</option>
+                        <option value="">完了</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <form action="order-status-confirm.html" method="post">
+            <a href="#">購入履歴検索に戻る</a>
+            <input type="submit" value="確認">
+        </form>
+        <p>
+            <a href="/admin">メニューに戻る</a>
+        </p>
+    </div>
+    <footer>
+        <div id="footer">Fullness Stationary社</div>
+    </footer>
+</body>
+
+</html>

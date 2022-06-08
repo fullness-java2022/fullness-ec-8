@@ -1,0 +1,27 @@
+@startuml
+actor "顧客" as user 
+hide footbox
+skinparam shadowing false
+left to right direction
+
+rectangle フロントエンド{
+    usecase "UC001\nアカウント機能" as account
+    usecase "UC002\nログイン" as login
+    usecase "UC003\nカテゴリ別商品検索" as search
+    usecase "UC004\n商品購入" as buy
+    usecase "UC005\n購入確定" as commit
+    usecase "UC006\n購入キャンセル" as cancel
+    usecase "UC007\n購入履歴閲覧" as history
+    usecase "UC008\nログアウト" as logout
+}
+
+user --> account
+user --> login
+user --> logout
+user --> search
+user --> history
+user --> buy
+buy ..> commit
+buy ..> cancel
+buy .> search
+@enduml

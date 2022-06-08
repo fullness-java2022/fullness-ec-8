@@ -1,0 +1,30 @@
+@startuml
+actor "顧客" as user 
+hide footbox
+skinparam shadowing false
+left to right direction
+
+rectangle バックエンド{
+    usecase "UC009\n担当者アカウント登録" as uc009
+    usecase "UC010\n新商品登録" as uc010
+    usecase "UC011\n商品検索" as uc011
+    usecase "UC012\n商品修正" as uc012
+    usecase "UC013\n商品削除" as uc013
+    usecase "UC014\nカテゴリ登録" as uc014
+    usecase "UC015\n購入履歴検索" as uc015
+    usecase "UC016\n配送手続き" as uc016
+    usecase "UC017\n担当者ログイン" as uc017
+    usecase "UC018\n担当者ログアウト" as uc018
+}
+
+user --> uc009
+user --> uc010
+user --> uc011
+user --> uc014
+user --> uc015
+user --> uc016
+user --> uc017
+user --> uc018
+uc011 ..> uc012: <<include>>
+uc011 ..> uc013: <<include>>
+@enduml

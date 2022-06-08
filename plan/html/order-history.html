@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>購入履歴検索 | Fullness Stationary社 文具/雑貨販売システム</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="/admin">文具/雑貨販売システム</a></h1>
+        <ul id="nav">
+            <li sec:authorize="hasRole('ADMIN')"><a href="/admin/product">商品情報メンテナンス</a></li>
+            <li sec:authorize="hasRole('ADMIN')"><a href="/admin/product-category-add">商品カテゴリ登録</a></li>
+            <li sec:authorize="hasRole('ADMIN')"><a href="/admin/history">購入履歴検索</a></li>
+            <li sec:authorize="hasRole('ADMIN')"><a href="/admin/emp-add">アカウント登録</a></li>
+            <li sec:authorize="isAuthenticated()">
+                <form th:action="@{/admin/logout}" method="post">
+                    <input type="submit" value="ログアウト" />
+                </form>
+            </li>
+        </ul>
+    </header>
+    <div id="main">
+        <h2>購入履歴検索</h2>
+        <form action="#" method="post">
+            購入日
+            <select name="date">
+                <option value="">2021月4月1日</option>
+            </select>
+            
+            顧客アカウント名(氏名)
+            <select name="date">
+                <option value="">r-takahashi(高橋 良輔)</option>
+            </select>
+            <input type="submit" value="検索">
+        </form>
+        <table border="1">
+            <tr>
+                <!-- <th>選択</th> -->
+                <th>購入日時</th>
+                <th>顧客アカウント名(氏名)</th>
+                <th>注文内容</th>
+                <th>ステータス</th>
+                <th>ステータス<br>更新</th>
+            </tr>
+            <tr>
+                <!-- <td><input type="checkbox"></td> -->
+                <td>2021年4月1日 10:23</td>
+                <td>r-takahashi(高橋 良輔)</td>
+                <td align="left">
+                    注文ID: 1<br>
+                    合計金額: 360円<br>
+                    <div style="font-size: 80%;">
+                        水性ボープペン(黒) x 1個<br>
+                        水性ボープペン(赤) x 1個<br>
+                        水性ボープペン(青) x 1個<br>
+                    </div>
+                </td>
+                <td>
+                    注文済み
+                </td>
+                <td>
+                    <!-- <select>
+                        <option value="">注文済み</option>
+                        <option value="">入金済み</option>
+                        <option value="">配送中</option>
+                        <option value="">完了</option>
+                    </select> -->
+                    <form action="order-status-form.html" method="get">    
+                        <input type="submit" value="更新">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <!-- <td><input type="checkbox"></td> -->
+                <td>2021年3月31日 23:48</td>
+                <td>taro-yamada(山田 太郎)</td>
+                <td align="left">
+                    注文ID: 2<br>
+                    合計金額: 120円<br>
+                    <div style="font-size: 80%;">
+                        水性ボープペン(青) x 1個<br>
+                    </div>
+                </td>
+                <td>
+                    配送中
+                </td>
+                <td>
+                    <form action="order-status-form.html" method="get">
+                        <input type="submit" value="更新">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>2021年3月31日 23:48</td>
+                <td>jiro-tanaka(田中 次郎)</td>
+                <td align="left">
+                    注文ID: 3<br>
+                    合計金額: 240円<br>
+                    <div style="font-size: 80%;">
+                        水性ボープペン(黒) x 1個<br>
+                        水性ボープペン(赤) x 1個<br>
+                    </div>
+                </td>
+                <td>
+                    完了
+                </td>
+                <td>
+                    <form action="order-status-form.html" method="get">
+                        <input type="submit" value="更新">
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <ul class="pagination">
+            <li class="disabled" style="display:inline"><span>最初</span></li>
+            <li class="disabled" style="display:inline"><span>前へ</span></li>
+            <li class="active" style="display:inline"><span>1</span></li>
+            <li style="display:inline"><a href="/admin/product?page=2"><span>2</span></a></li>
+            <li style="display:inline"><a href="/admin/product?page=3"><span>3</span></a></li>
+            <li style="display:inline"><a href="/admin/product?page=4"><span>4</span></a></li>
+            <li style="display:inline"><a href="/admin/product?page=5"><span>5</span></a></li>
+            <li style="display:inline"><a href="/admin/product?page=6"><span>6</span></a></li>
+            <li style="display:inline"><a href="/admin/product?page=7"><span>7</span></a></li>
+            <li style="display:inline"><a href="/admin/product?page=8"><span>8</span></a></li>
+            <li style="display:inline"><a href="/admin/product?page=9"><span>9</span></a></li>
+            <li style="display:inline"><a href="/admin/product?page=2">次へ</a></li>
+            <li style="display:inline"><a href="/admin/product?page=9">最後</a></li>
+        </ul>
+        <p>
+            <a href="/admin">メニューに戻る</a>
+        </p>
+    </div>
+    <footer>
+        <div id="footer">Fullness Stationary社</div>
+    </footer>
+</body>
+
+</html>
