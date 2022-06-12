@@ -91,11 +91,11 @@ TODO チーム目標を入れてください。
 
 #### バックエンド
 
-![](plan/function/img/page-transition-backend.png)
+![](plan/page-transition/page-transition-backend.png)
 
 #### フロントエンド
 
-（設計中）
+![](plan/page-transition/page-transition-frontend.png)
 
 ### 画面一覧
 
