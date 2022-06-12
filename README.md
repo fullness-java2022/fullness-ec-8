@@ -81,7 +81,7 @@ TODO チーム目標を入れてください。
 [UC011](plan/function/uc011.md) | 商品検索 | 選択されたカテゴリに属する商品を一覧形式で表示する
 [UC012](plan/function/uc012.md) | 商品修正 | [UC011](plan/function/uc011.md)の検索結果画面で選択された商品に関する情報を変更する
 [UC013](plan/function/uc013.md) | 商品削除 | [UC011](plan/function/uc011.md)の検索結果画面で選択された商品に関する情報を削除する
-[UC014](plan/function/uc014.md) | カテゴリ登録 | 新しい商品カテゴリを登録する
+[UC014](plan/function/uc014.md) | 商品カテゴリ登録 | 新しい商品カテゴリを登録する
 [UC015](plan/function/uc015.md) | 購入履歴検索 | 購入日または顧客のアカウントで購入履歴を検索する
 [UC016](plan/function/uc016.md) | 配送手続き | 配送した商品のステータスを変更する
 [UC017](plan/function/uc017.md) | 担当者ログイン | システムを利用する資格を有している担当者かを認証によって確認する
@@ -103,45 +103,45 @@ TODO チーム目標を入れてください。
 
 画面ID | 画面名
 ---|---
-P001 | [メニュー画面](plan/function/menu.md)
-P002 | 担当者ログイン画面
-P003 | 担当者アカウント登録(入力)画面
-P004 | 担当者アカウント登録(確認)画面
-P005 | 担当者アカウント登録(完了)画面
-P006 | 商品検索画面
-P007 | 商品削除(確認)画面
-P008 | 商品削除(完了)画面
-P009 | 商品修正(入力)画面
-P010 | 商品修正(確認)画面
-P011 | 商品修正(完了)画面
-P012 | 新商品登録(入力)画面
-P013 | 新商品登録(確認)画面
-P014 | 新商品登録(完了)画面
-P015 | 購入履歴検索画面
-P016 | 配送手続き(入力)画面
-P017 | 配送手続き(確認)画面
-P018 | 配送手続き(完了)画面
-P019 | 商品カテゴリ登録(入力)画面
-P020 | 商品カテゴリ登録(確認)画面
-P021 | 商品カテゴリ登録(完了)画面
-P000 | [エラー画面](plan/function/error.md)
+[P001](plan/function/menu.md) | メニュー画面
+[P002](plan/function/uc017.md) | 担当者ログイン画面
+[P003](plan/function/uc009.md) | 担当者アカウント登録(入力)画面
+[P004](plan/function/uc009.md) | 担当者アカウント登録(確認)画面
+[P005](plan/function/uc009.md) | 担当者アカウント登録(完了)画面
+[P006](plan/function/uc011.md) | 商品検索画面
+[P007](plan/function/uc013.md) | 商品削除(確認)画面
+[P008](plan/function/uc013.md) | 商品削除(完了)画面
+[P009](plan/function/uc012.md) | 商品修正(入力)画面
+[P010](plan/function/uc012.md) | 商品修正(確認)画面
+[P011](plan/function/uc012.md) | 商品修正(完了)画面
+[P012](plan/function/uc010.md) | 新商品登録(入力)画面
+[P013](plan/function/uc010.md) | 新商品登録(確認)画面
+[P014](plan/function/uc010.md) | 新商品登録(完了)画面
+[P015](plan/function/uc015.md) | 購入履歴検索画面
+[P016](plan/function/uc016.md) | 配送手続き(入力)画面
+[P017](plan/function/uc016.md) | 配送手続き(確認)画面
+[P018](plan/function/uc016.md) | 配送手続き(完了)画面
+[P019](plan/function/uc014.md) | 商品カテゴリ登録(入力)画面
+[P020](plan/function/uc014.md) | 商品カテゴリ登録(確認)画面
+[P021](plan/function/uc014.md) | 商品カテゴリ登録(完了)画面
+[P000](plan/function/error.md) | エラー画面
 
 #### フロントエンド
 
 画面ID | 画面名
 ---|---
-FP001 | トップ画面
-[FP002](plan/function/uc002.md#ログイン画面) | 顧客ログイン画面
-[FP003](plan/function/uc001.md#アカウント登録入力画面) | 顧客アカウント登録(入力)画面
-[FP004](plan/function/uc001.md#アカウント登録確認画面) | 顧客アカウント登録(確認)画面
-[FP005](plan/function/uc001.md#アカウント登録完了画面) | 顧客アカウント登録(完了)画面
-[FP006](plan/function/uc003.md#カテゴリ別商品検索画面) | カテゴリ商品検索画面
-[FP007](plan/function/uc004.md#商品詳細画面) | 商品詳細画面
-[FP008](plan/function/uc004.md#カート画面) | 購入(入力)画面
-[FP009](plan/function/uc005.md#購入確認画面) | 購入(確認)画面
-[FP010](plan/function/uc005.md#購入完了画面) | 購入(完了)画面
-[FP011](plan/function/uc007.md#購入履歴一覧画面) | 購入履歴一覧画面
-[FP012](plan/function/uc007.md#購入履歴詳細画面) | 購入履歴詳細画面
+[FP001](plan/function/frontend-top.md) | トップ画面
+[FP002](plan/function/uc002.md) | 顧客ログイン画面
+[FP003](plan/function/uc001.md) | 顧客アカウント登録(入力)画面
+[FP004](plan/function/uc001.md) | 顧客アカウント登録(確認)画面
+[FP005](plan/function/uc001.md) | 顧客アカウント登録(完了)画面
+[FP006](plan/function/uc003.md) | カテゴリ商品検索画面
+[FP007](plan/function/uc004.md) | 商品詳細画面
+[FP008](plan/function/uc004.md) | 購入(入力)画面
+[FP009](plan/function/uc005.md) | 購入(確認)画面
+[FP010](plan/function/uc005.md) | 購入(完了)画面
+[FP011](plan/function/uc007.md) | 購入履歴一覧画面
+[FP012](plan/function/uc007.md) | 購入履歴詳細画面
 FP000 | エラー画面
 
 ---
