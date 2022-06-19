@@ -1,5 +1,9 @@
 # Fullness Stationary社 文具/雑貨販売システム
 
+## テストレポート
+
+[https://fullness-java2022.github.io/fullness-ec-8](https://fullness-java2022.github.io/fullness-ec-8)
+
 ## 目次
 
   - [チームメンバー](#チームメンバー)
