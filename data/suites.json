@@ -1,0 +1,26 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "com.fullness.ec.selenide.ScreenshotTest",
+    "children" : [ {
+      "name" : "トップ画面からメニュー画面へ遷移するテスト()",
+      "uid" : "8f314061a885c63f",
+      "parentUid" : "fbc575e00e41466cafded93cd7a4880e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655633425090,
+        "stop" : 1655633431238,
+        "duration" : 6148
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "fbc575e00e41466cafded93cd7a4880e"
+  } ]
+}

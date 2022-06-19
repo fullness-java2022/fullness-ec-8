@@ -1,0 +1,11 @@
+[ {
+  "uid" : "8f314061a885c63f",
+  "name" : "トップ画面からメニュー画面へ遷移するテスト()",
+  "time" : {
+    "start" : 1655633425090,
+    "stop" : 1655633431238,
+    "duration" : 6148
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

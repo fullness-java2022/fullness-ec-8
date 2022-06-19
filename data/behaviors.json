@@ -1,0 +1,30 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Selenide + Allureのテスト",
+    "children" : [ {
+      "name" : "トップ画面からメニュー画面へ遷移",
+      "children" : [ {
+        "name" : "トップ画面からメニュー画面へ遷移するテスト()",
+        "uid" : "8f314061a885c63f",
+        "parentUid" : "428594386c21e9e559390d4e18adf2a9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1655633425090,
+          "stop" : 1655633431238,
+          "duration" : 6148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "428594386c21e9e559390d4e18adf2a9"
+    } ],
+    "uid" : "ff33de79de51922e4512e3575a3767dc"
+  } ]
+}

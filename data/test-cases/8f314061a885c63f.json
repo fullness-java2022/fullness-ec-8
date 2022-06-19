@@ -1,0 +1,280 @@
+{
+  "uid" : "8f314061a885c63f",
+  "name" : "トップ画面からメニュー画面へ遷移するテスト()",
+  "fullName" : "com.fullness.ec.selenide.ScreenshotTest.トップ画面からメニュー画面へ遷移するテスト",
+  "historyId" : "8cc8afc9e743da275f400786170f292f",
+  "time" : {
+    "start" : 1655633425090,
+    "stop" : 1655633431238,
+    "duration" : 6148
+  },
+  "description" : "Selenideを使ったE2Eテスト",
+  "descriptionHtml" : "<p>Selenideを使ったE2Eテスト</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1655633415883,
+      "stop" : 1655633420100,
+      "duration" : 4217
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Selenideを使ったE2Eテスト",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "トップ画面からメニュー画面へ遷移",
+      "time" : {
+        "start" : 1655633425959,
+        "stop" : 1655633431199,
+        "duration" : 5240
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "トップページにアクセス",
+        "time" : {
+          "start" : 1655633425960,
+          "stop" : 1655633427507,
+          "duration" : 1547
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"open\") http://localhost:55257",
+          "time" : {
+            "start" : 1655633426015,
+            "stop" : 1655633426979,
+            "duration" : 964
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ {
+          "uid" : "7381408ad37187f4",
+          "name" : "screenshot",
+          "source" : "7381408ad37187f4.png",
+          "type" : "image/png",
+          "size" : 39084
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "ユーザ・パスワードを入力",
+        "time" : {
+          "start" : 1655633427508,
+          "stop" : 1655633428680,
+          "duration" : 1172
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"By.name: userName\") val(takahashi)",
+          "time" : {
+            "start" : 1655633427596,
+            "stop" : 1655633428072,
+            "duration" : 476
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        }, {
+          "name" : "$(\"By.name: password\") val(password)",
+          "time" : {
+            "start" : 1655633428072,
+            "stop" : 1655633428182,
+            "duration" : 110
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ {
+          "uid" : "a0577f2a307ca957",
+          "name" : "screenshot",
+          "source" : "a0577f2a307ca957.png",
+          "type" : "image/png",
+          "size" : 45348
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 2,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "送信ボタンをクリック",
+        "time" : {
+          "start" : 1655633428682,
+          "stop" : 1655633430676,
+          "duration" : 1994
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"By.name: submit\") click()",
+          "time" : {
+            "start" : 1655633428682,
+            "stop" : 1655633430676,
+            "duration" : 1994
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "メニュー画面を確認",
+        "time" : {
+          "start" : 1655633430676,
+          "stop" : 1655633431199,
+          "duration" : 523
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "$(\"#message\") should have(text 'hello takahashi')",
+          "time" : {
+            "start" : 1655633430692,
+            "stop" : 1655633430729,
+            "duration" : 37
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ {
+          "uid" : "8d4325b21d2a25c",
+          "name" : "screenshot",
+          "source" : "8d4325b21d2a25c.png",
+          "type" : "image/png",
+          "size" : 38682
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 9,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 10,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "after",
+    "time" : {
+      "start" : 1655633431420,
+      "stop" : 1655633431485,
+      "duration" : 65
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "junit.platform.uniqueid",
+    "value" : "[engine:junit-jupiter]/[class:com.fullness.ec.selenide.ScreenshotTest]/[method:トップ画面からメニュー画面へ遷移するテスト()]"
+  }, {
+    "name" : "epic",
+    "value" : "Selenide + Allureのテスト"
+  }, {
+    "name" : "story",
+    "value" : "トップ画面からメニュー画面へ遷移"
+  }, {
+    "name" : "host",
+    "value" : "m1-mba.local"
+  }, {
+    "name" : "thread",
+    "value" : "57981@m1-mba.local.Test worker(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "com.fullness.ec.selenide.ScreenshotTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.fullness.ec.selenide.ScreenshotTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "トップ画面からメニュー画面へ遷移するテスト"
+  }, {
+    "name" : "suite",
+    "value" : "com.fullness.ec.selenide.ScreenshotTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8f314061a885c63f.json",
+  "parameterValues" : [ ]
+}

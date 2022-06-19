@@ -1,0 +1,30 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "m1-mba.local",
+    "children" : [ {
+      "name" : "57981@m1-mba.local.Test worker(1)",
+      "children" : [ {
+        "name" : "トップ画面からメニュー画面へ遷移するテスト()",
+        "uid" : "8f314061a885c63f",
+        "parentUid" : "b2607fa6dd94f627e58c5fa87b9f6f8a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1655633425090,
+          "stop" : 1655633431238,
+          "duration" : 6148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b2607fa6dd94f627e58c5fa87b9f6f8a"
+    } ],
+    "uid" : "ce67224ef3bb6dab0b4b0f14b98da8dd"
+  } ]
+}
