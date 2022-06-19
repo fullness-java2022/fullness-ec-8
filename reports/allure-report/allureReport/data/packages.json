@@ -1,0 +1,26 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "com.fullness.ec.selenide.ScreenshotTest",
+    "children" : [ {
+      "name" : "トップ画面からメニュー画面へ遷移するテスト",
+      "uid" : "8f314061a885c63f",
+      "parentUid" : "dc1d5a0d91cd2e33f039915de2ab48b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655633425090,
+        "stop" : 1655633431238,
+        "duration" : 6148
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "com.fullness.ec.selenide.ScreenshotTest"
+  } ]
+}

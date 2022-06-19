@@ -32,7 +32,7 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
-reporting { baseDir = "$buildDir/reports" }
+reporting { baseDir = "reports" }
 
 allure {
     version = '2.18.0'
