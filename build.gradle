@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.6.8'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id 'io.qameta.allure' version '2.9.6'
 }
 
 group = 'com.fullness'
@@ -14,9 +15,27 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'com.codeborne:selenide:5.25.0'
+    testImplementation 'io.qameta.allure:allure-junit5:2.18.1'
+    testImplementation 'io.qameta.allure:allure-selenide:2.18.1'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.14.0'
+    implementation 'org.seleniumhq.selenium:selenium-api:3.14.0'
+    implementation 'org.seleniumhq.selenium:selenium-chrome-driver:3.14.0'
+    implementation 'org.seleniumhq.selenium:selenium-remote-driver:3.14.0'
+    //testImplementation 'org.slf4j:slf4j-simple:1.7.36'
 }
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+reporting { baseDir = "$buildDir/reports" }
+
+allure {
+    version = '2.18.0'
+    useJUnit5 { version = '2.18.0' }
+    report { reportDir.set(project.reporting.baseDirectory.dir("allure-report")) }
 }
